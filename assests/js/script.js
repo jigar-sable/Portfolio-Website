@@ -131,8 +131,6 @@ srtop.reveal('.home .telegram',{interval: 600});
 srtop.reveal('.home .instagram',{interval: 600}); 
 srtop.reveal('.home .dev',{interval: 600}); 
 
-
-
 /* SCROLL ABOUT */
 srtop.reveal('.about .content h3',{delay: 300});
 srtop.reveal('.about .content .tag',{delay: 400}); 

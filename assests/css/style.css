@@ -52,7 +52,7 @@ html::-webkit-scrollbar-thumb{
   width: 100%;
 }
 .loader-container.fade-out{
-  top: -120%;
+  top: -120%; 
 }
 /* pre loader end */
 

@@ -36,7 +36,7 @@ function getProjects() {
         .then(response => response.json())
         .then(data => {
             return data
-        })
+        });
 }
 
 
