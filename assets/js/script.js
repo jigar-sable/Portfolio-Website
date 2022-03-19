@@ -96,7 +96,7 @@ function showSkills(skills) {
         skillHTML += `
         <div class="bar">
               <div class="info">
-                <img src=${skill.icon} />
+                <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
               </div>
             </div>`
@@ -110,7 +110,7 @@ function showProjects(projects) {
     projects.slice(0, 6).forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="" />
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
       <div class="content">
         <div class="tag">
         <h3>${project.name}</h3>
@@ -126,6 +126,24 @@ function showProjects(projects) {
     </div>`
     });
     projectsContainer.innerHTML = projectHTML;
+
+    // <!-- tilt js effect starts -->
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+        max: 15,
+    });
+    // <!-- tilt js effect ends -->
+
+    /* ===== SCROLL REVEAL ANIMATION ===== */
+    const srtop = ScrollReveal({
+        origin: 'top',
+        distance: '80px',
+        duration: 1000,
+        reset: true
+    });
+
+    /* SCROLL PROJECTS */
+    srtop.reveal('.work .box', { interval: 200 });
+
 }
 
 fetchData().then(data => {

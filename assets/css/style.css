@@ -221,12 +221,12 @@ header .navbar ul li a:hover {
 .home .image img:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-.home .content h3 {
+.home .content h2 {
   font-size: 5rem;
   font-weight: 800;
   color: #002057;
 }
-.home .content h3 span {
+.home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
   color: #ff7b00;
@@ -362,6 +362,7 @@ header .navbar ul li a:hover {
 .about .row .image img {
   margin: 4rem;
   width: 30rem;
+  height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
   mix-blend-mode: luminosity;
