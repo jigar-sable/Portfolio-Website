@@ -9,7 +9,7 @@
   outline: none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  
 }
 html {
   font-size: 62.5%;
@@ -17,7 +17,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  background:rgb(230, 223, 223);
   font-family: "Poppins", sans-serif;
 }
 
@@ -229,7 +229,7 @@ header .navbar ul li a:hover {
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #002057;
 }
 .home .content p {
   font-size: 2.5rem;
@@ -346,7 +346,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: hsl(221,73%,94%);
 }
 .about .row {
   display: flex;
@@ -1223,3 +1223,4 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
