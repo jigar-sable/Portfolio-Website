@@ -211,6 +211,19 @@ const srtop = ScrollReveal({
     reset: true
 });
 
+// dob auto culcalate
+
+//here enter the date of birth
+var sdt = new Date('1999-12-10');
+var difdt = new Date(new Date() - sdt);
+
+var strMessage1 = document.getElementById("element1") ;
+ 
+strMessage1.innerHTML = strMessage1.innerHTML.replace('%y', (difdt.toISOString().slice(0, 4) - 1970)).replace('%m', (difdt.getMonth())).replace('%d',  difdt.getDate()-1) ;
+
+// end of dob
+
+
 /* SCROLL HOME */
 srtop.reveal('.home .content h3', { delay: 200 });
 srtop.reveal('.home .content p', { delay: 200 });
@@ -223,6 +236,8 @@ srtop.reveal('.home .twitter', { interval: 1000 });
 srtop.reveal('.home .telegram', { interval: 600 });
 srtop.reveal('.home .instagram', { interval: 600 });
 srtop.reveal('.home .dev', { interval: 600 });
+srtop.reveal('.home .hackthebox', { interval: 600 });
+srtop.reveal('.home .Facebook', { interval: 600 });
 
 /* SCROLL ABOUT */
 srtop.reveal('.about .content h3', { delay: 200 });
