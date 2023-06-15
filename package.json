@@ -1,0 +1,14 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "This is a static template with no bundling",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
+  },
+  "dependencies": {
+    "http-serve": "^1.0.1",
+    "http-server": "^14.1.1"
+  }
+}
