@@ -158,6 +158,7 @@ header .navbar ul li a:hover{
 /* experience section starts */
 .experience {
   margin-top: 5rem;
+  height: 500px;
 }
 .experience .quote {
   text-align: center;
