@@ -513,7 +513,39 @@ header .navbar ul li a:hover {
   margin-left: 0.5rem;
 }
 /* skills media queries starts*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1400px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+  .skills .container {
+    margin-top: 2px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .skills .container {
+    padding: 0;
+    margin: 0;
+  }
+  .skills .container .row {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 2rem;
+  }
+  .skills .container {
+    margin-top: 2px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
   .skills .container {
     padding: 0;
     margin: 0;
@@ -521,11 +553,11 @@ header .navbar ul li a:hover {
   .skills .container .row {
     grid-template-columns: repeat(2, 1fr);
     margin: 1rem;
-    padding: 2rem 0.2rem 2rem 0.2rem;
-    gap: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
+    gap: 2rem;
   }
   .skills .container {
-    margin-top: 5px;
+    margin-top: 2px;
     width: 100%;
   }
 }
