@@ -25,15 +25,15 @@
     },
     {
         "name": "Catia V5",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/d/dd/CATIA_Logotype_RGB_Blue.png"
+        "icon": "#"
     },
     {
         "name": "Fusion 360",
-        "icon": "https://ww2.freelogovectors.net/wp-content/uploads/2023/05/autodesk_fusion_360_logo-freelogovectors.net_.png"
+        "icon": "#"
     },
     {
         "name": "Eagle CAD",
-        "icon": "https://i0.wp.com/www.autodesk.com/products/fusion-360/blog/wp-content/uploads/2021/06/autodesk-eagle-logo.png"
+        "icon": "#"
     },
     {
         "name": "Matlab",
