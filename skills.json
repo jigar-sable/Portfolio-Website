@@ -45,7 +45,7 @@
     },
     {
         "name": "ROS",
-        "icon": "https://www.ros.org/imgs/logo-white.png"
+        "icon": "#"
     },
     {
         "name": "MongoDB",
