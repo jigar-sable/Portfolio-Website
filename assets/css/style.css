@@ -212,10 +212,10 @@ header .navbar ul li a:hover {
   z-index: 1;
 }
 .home .image img {
-  width: 70%;
+  width: 62%;
   margin-left: 6rem;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 40%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   cursor: pointer;
 }
 .home .image img:hover {
