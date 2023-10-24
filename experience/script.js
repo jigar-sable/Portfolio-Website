@@ -35,7 +35,7 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/60df10bf7f4b000ac03ab6a8/1f9jlirg6';
+s1.src='https://embed.tawk.to/65374e26a84dd54dc4848dea/1hdg0ihga';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
@@ -65,11 +65,11 @@ document.onkeydown = function(e) {
 document.addEventListener('visibilitychange',
 function(){
     if(document.visibilityState === "visible"){
-        document.title = "Experience | Portfolio Jigar Sable";
-        $("#favicon").attr("href","/assets/images/favicon.png");
+        document.title = "Experience | Portfolio Ismail";
+        $("#favicon").attr("href","/assets/images/favicon-32x32.png");
     }
     else {
         document.title = "Come Back To Portfolio";
-        $("#favicon").attr("href","/assets/images/favhand.png");
+        $("#favicon").attr("href","/assets/images/favicon-32x32.png");
     }
 });
