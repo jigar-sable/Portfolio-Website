@@ -25,15 +25,15 @@
     },
     {
         "name": "Catia V5",
-        "icon": "#"
+        "icon": "./assets/images/catia_favicon.png"
     },
     {
         "name": "Fusion 360",
-        "icon": "#"
+        "icon": "./assets/images/fusion_favicon.png"
     },
     {
         "name": "Eagle CAD",
-        "icon": "#"
+        "icon": "./assets/images/eagle_favicon.png"
     },
     {
         "name": "Matlab",
@@ -45,7 +45,7 @@
     },
     {
         "name": "ROS",
-        "icon": "#"
+        "icon": "./assets/images/ros_favicon.png"
     },
     {
         "name": "MongoDB",
