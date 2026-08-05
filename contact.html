@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Omkar Shinde for front-end development, cloud projects, and interactive web work." />
+  <title>Contact | Omkar Shinde</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Omkar Shinde</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro fade-in">
+        <span class="eyebrow">Get in touch</span>
+        <h1>Let’s build something awesome together.</h1>
+        <p>If you have a development challenge, cloud initiative, or creative website idea, I’d love to hear from you.</p>
+      </section>
+
+      <section class="contact-grid fade-in">
+        <div class="contact-card">
+          <h2>Contact details</h2>
+          <p><strong>Email</strong><br /><a href="mailto:omkar@example.com">omkar@example.com</a></p>
+          <p><strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/in/omkar-shinde" target="_blank" rel="noreferrer">linkedin.com/in/omkar-shinde</a></p>
+          <p><strong>Availability</strong><br />Open to internships, freelance projects, and collaboration.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project." required></textarea>
+
+          <button class="button button-primary" type="submit">Send message</button>
+          <p id="contact-feedback" class="contact-feedback" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Responsive, accessible, and ready for modern deployments.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
