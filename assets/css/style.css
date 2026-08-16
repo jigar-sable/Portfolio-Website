@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
+:root {
+  --bg: #05070D;
+  --bg-secondary: #080D18;
+  --card: #0B1120;
+
+  --primary: #00F0FF;
+  --secondary: #8B5CF6;
+  --accent: #FF0055;
+
+  --text: #E5F9FF;
+  --muted: #94A3B8;
+
+  --neon-glow:
+    0 0 5px #00F0FF,
+    0 0 15px rgba(0, 240, 255, 0.5),
+    0 0 30px rgba(0, 240, 255, 0.25);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,10 +35,17 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
-  font-family: "Poppins", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Rajdhani", sans-serif;
 }
-
+h1,
+h2,
+h3,
+.logo,
+.navbar {
+  font-family: "Orbitron", sans-serif;
+}
 *::selection {
   background: #2b3dda;
   color: #fff;
@@ -60,18 +85,11 @@ html::-webkit-scrollbar-thumb {
 
 /* navbar starts */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.7rem 10%;
-  height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background: rgba(5, 7, 13, 0.9);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.25);
+  box-shadow:
+    0 0 20px rgba(0, 240, 255, 0.08);
+  backdrop-filter: blur(10px);
 }
 section {
   min-height: 100vh;
@@ -87,10 +105,8 @@ section {
   color: rgb(115, 3, 167);
 }
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
-  color: #0e2431;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
 }
 header .logo i {
   font-size: 2.2rem;
@@ -108,18 +124,14 @@ header .navbar li {
   margin-left: 2.5rem;
 }
 header .navbar ul li a {
-  font-size: 1.57rem;
-  color: #0e2431;
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.04rem;
-  transition: 0.2s;
+  color: var(--text);
 }
+
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
-  padding: 0.5rem 0;
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
 }
 /* navbar ends */
 
@@ -180,12 +192,14 @@ header .navbar ul li a:hover {
 
 /* hero section starts*/
 .home {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  min-height: 100vh;
-  align-items: center;
+  background:
+    radial-gradient(circle at 20% 50%,
+      rgba(0, 240, 255, 0.08),
+      transparent 35%),
+    radial-gradient(circle at 80% 50%,
+      rgba(139, 92, 246, 0.08),
+      transparent 35%),
+    #05070D;
 }
 .home #particles-js {
   position: absolute;
@@ -222,14 +236,18 @@ header .navbar ul li a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 .home .content h2 {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #002057;
+  color: #E5F9FF;
+  text-shadow:
+    0 0 5px rgba(0, 240, 255, 0.5);
 }
+
 .home .content h2 span {
-  font-size: 5rem;
-  font-weight: 800;
-  color: #ff7b00;
+  color: var(--primary);
+
+  text-shadow:
+    0 0 5px var(--primary),
+    0 0 15px var(--primary),
+    0 0 30px rgba(0, 240, 255, 0.5);
 }
 .home .content p {
   font-size: 2.5rem;
@@ -244,16 +262,19 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 .home .btn {
-  margin-top: 1rem;
-  position: absolute;
-  line-height: 0;
-  padding: 1.6rem 3rem;
-  border-radius: 4em;
-  transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
-  font-family: "Nunito", sans-serif;
+  background: transparent;
+  color: var(--primary);
+
+  border: 1px solid var(--primary);
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 0 5px rgba(0, 240, 255, 0.4),
+    inset 0 0 5px rgba(0, 240, 255, 0.1);
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .home .btn span {
   font-weight: 700;
@@ -266,7 +287,12 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: var(--primary);
+  color: #05070D;
+
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 30px rgba(0, 240, 255, 0.6);
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -1223,3 +1249,50 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+
+.glitch {
+  position: relative;
+  color: var(--primary);
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+  }
+
+  92% {
+    transform: translate(-2px, 1px);
+    text-shadow:
+      2px 0 #ff0055,
+      -2px 0 #00f0ff;
+  }
+
+  94% {
+    transform: translate(2px, -1px);
+    text-shadow:
+      -2px 0 #ff0055,
+      2px 0 #00f0ff;
+  }
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.04) 1px,
+      transparent 1px),
+    linear-gradient(90deg,
+      rgba(0, 240, 255, 0.04) 1px,
+      transparent 1px);
+
+  background-size: 40px 40px;
+
+  pointer-events: none;
+}
